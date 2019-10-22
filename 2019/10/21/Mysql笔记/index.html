@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Mysql笔记 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="/*Mysql数据库第一次课   0、数据库的分类       关系型数据库          sqlserver mysql orcale       非关系型数据库nosql          redis   关系型数据库   一、什么是数据库       用来存储数据的仓库，数据库由一张一张的表       组成，真正存储数据的地方为表   二、什么是表       表由行和列组成">
+  <meta name="description" content="Mysql数据库第一次课   0、数据库的分类       关系型数据库          sqlserver mysql orcale       非关系型数据库nosql          redis   关系型数据库   一、什么是数据库       用来存储数据的仓库，数据库由一张一张的表       组成，真正存储数据的地方为表   二、什么是表       表由行和列组成">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mysql笔记">
 <meta property="og:url" content="http://yoursite.com/2019/10/21/Mysql笔记/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="/*Mysql数据库第一次课   0、数据库的分类       关系型数据库          sqlserver mysql orcale       非关系型数据库nosql          redis   关系型数据库   一、什么是数据库       用来存储数据的仓库，数据库由一张一张的表       组成，真正存储数据的地方为表   二、什么是表       表由行和列组成">
+<meta property="og:description" content="Mysql数据库第一次课   0、数据库的分类       关系型数据库          sqlserver mysql orcale       非关系型数据库nosql          redis   关系型数据库   一、什么是数据库       用来存储数据的仓库，数据库由一张一张的表       组成，真正存储数据的地方为表   二、什么是表       表由行和列组成">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-21T01:14:30.947Z">
+<meta property="og:updated_time" content="2019-10-22T03:24:59.546Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mysql笔记">
-<meta name="twitter:description" content="/*Mysql数据库第一次课   0、数据库的分类       关系型数据库          sqlserver mysql orcale       非关系型数据库nosql          redis   关系型数据库   一、什么是数据库       用来存储数据的仓库，数据库由一张一张的表       组成，真正存储数据的地方为表   二、什么是表       表由行和列组成">
+<meta name="twitter:description" content="Mysql数据库第一次课   0、数据库的分类       关系型数据库          sqlserver mysql orcale       非关系型数据库nosql          redis   关系型数据库   一、什么是数据库       用来存储数据的仓库，数据库由一张一张的表       组成，真正存储数据的地方为表   二、什么是表       表由行和列组成">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -174,9 +174,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>/*<br>Mysql数据库第一次课<br>   0、数据库的分类<br>       关系型数据库<br>          sqlserver mysql orcale<br>       非关系型数据库nosql<br>          redis<br>   关系型数据库<br>   一、什么是数据库<br>       用来存储数据的仓库，数据库由一张一张的表<br>       组成，真正存储数据的地方为表<br>   二、什么是表<br>       表由行和列组成<br>       行在数据库里称为记录<br>       列称为字段或属性<br>       例如：学生表，表里应该有，学生的学号，<br>       姓名，身份证号，年纪。那么这些就称为<br>       表的字段。<br>    关系型数据库，是由一张一张有关系的表的<br>    组成的<br> 三、安装Mysql<br>    先安装Mysql服务器<br>        数据库是创建的在服务器上的<br>    再安装Mysql客户端<br>        用于连接上mysql服务器，进而对<br>        mysql服务器进行操作，比较常用<br>        客户端有navicat sqlyog<br> 四、sql语句的学习<br>    1、创建语句<br>        1.1、创建数据库<br>             create database 库名;<br>        1.2、创建表<br>             create table 表名(<br>                字段名1 数据类型 约束,<br>                字段名2 数据类型 约束,<br>                字段名3 数据类型<br>             )<br>          最常用的数据类型<br>          int<br>          char  字符串类型，固定<br>                长度<br>          varchar 字符串类型,可变<br>                长度<br>          float<br>    2、插入语句<br>     insert into 表名(字段1,字段2)<br>          values(数据1,数据2)<br>    3、查询语句<br>    select 字段1,字段2,字段3<br>       from 表名<br>    4、删除语句<br>          删除库<br>            dorp database 库名;<br>          删除表<br>            drop table 表名;<br>          删除表中所有的数据<br>            delete from 表名;<br>          删除表中指定的数据<br>            delete from 表名 where …<br>    5、修改语句<br>      update 表名 set … where …</p>
+        <p>Mysql数据库第一次课<br>   0、数据库的分类<br>       关系型数据库<br>          sqlserver mysql orcale<br>       非关系型数据库nosql<br>          redis<br>   关系型数据库<br>   一、什么是数据库<br>       用来存储数据的仓库，数据库由一张一张的表<br>       组成，真正存储数据的地方为表<br>   二、什么是表<br>       表由行和列组成<br>       行在数据库里称为记录<br>       列称为字段或属性<br>       例如：学生表，表里应该有，学生的学号，<br>       姓名，身份证号，年纪。那么这些就称为<br>       表的字段。<br>    关系型数据库，是由一张一张有关系的表的<br>    组成的<br> 三、安装Mysql<br>    先安装Mysql服务器<br>        数据库是创建的在服务器上的<br>    再安装Mysql客户端<br>        用于连接上mysql服务器，进而对<br>        mysql服务器进行操作，比较常用<br>        客户端有navicat sqlyog<br> 四、sql语句的学习<br>    1、创建语句<br>        1.1、创建数据库<br>             create database 库名;<br>        1.2、创建表<br>             create table 表名(<br>                字段名1 数据类型 约束,<br>                字段名2 数据类型 约束,<br>                字段名3 数据类型<br>             )<br>          最常用的数据类型<br>          int<br>          char  字符串类型，固定<br>                长度<br>          varchar 字符串类型,可变<br>                长度<br>          float<br>    2、插入语句<br>     insert into 表名(字段1,字段2)<br>          values(数据1,数据2)<br>    3、查询语句<br>    select 字段1,字段2,字段3<br>       from 表名<br>    4、删除语句<br>          删除库<br>            dorp database 库名;<br>          删除表<br>            drop table 表名;<br>          删除表中所有的数据<br>            delete from 表名;<br>          删除表中指定的数据<br>            delete from 表名 where …<br>    5、修改语句<br>      update 表名 set … where …</p>
 <p>Mysql第二次课<br>数据库的设计规范<br>数据库的设计的三大范式<br>第一范式：<br>表中的字段都是不可分割的最小的数据单元<br>第二范式：<br>每张表只能描述一件事情，<br>每张表都要有主键，<br>第三范式：<br>非主键字段，要依赖于主键字段<br>换句话说，非主键字段与主键字段直接相关<br>在设计表时，尽可能依照三范式，<br>但有的时候为了性能，会牺牲范式</p>
-<p>第三次课<br>    order by 排序<br>    group by 把表分组<br>    group by…having..分组并筛选符合条件组<br>    子查询<br>    查询语句里边嵌套查询语句<br>连接<br>    把多张表连接成一张表，要注意一般<br>    连接分类：<br>    普通连接<br>    内连接<br>        inner join .. on …<br>        inner join用内连接方式连接两张表<br>              on后面写的是条件<br>        外连接 （左连接与右连接）<br>            左连接<br>            left join..on…<br>            左边的表显示所有数据<br>            右边的表只显示匹配上的数据<br>            右连接<br>            right join…on…<br>            右边的表显示全部数据<br>            左边的表只显示匹配上的数据<br>        全连接<br>            左右边都全部显示<br>第四次课<br> truncate清空表<br> truncate table 表名<br> is  null<br> is not null<br> 模糊查询<br>    like<br>    % 代表一个或多个字符<br>    _ 代表一个字符<br> exists存在<br>    exists里边括住的是一个<br>    查询语句,如果查询语句<br>    有结果，外部查询就正常<br>    执行，如果没结果，外部<br>    查询不执行<br> not exists不存在<br>Mysql第四次课<br> truncate清空表<br> truncate table 表名<br> is  null<br> is not null<br> 模糊查询<br>    like<br>    % 代表一个或多个字符<br>    _ 代表一个字符<br> exists存在<br>    exists里边括住的是一个<br>    查询语句,如果查询语句<br>    有结果，外部查询就正常<br>    执行，如果没结果，外部<br>    查询不执行<br> not exists不存在<br>*/<br>SELECT * FROM course<br>              WHERE cnam IS NOT NULL<br>#模糊查询<br>#查询出姓名中包含“三”的<br>#学生的信息<br>SELECT * FROM StudentInfo<br>      WHERE snam LIKE ‘%三%’;<br>#查询出姓周的同学信息<br>SELECT * FROM StudentInfo<br>      WHERE snam LIKE ‘周%’<br>#如果有安阳市的学生，就把<br>#本班所有学生的信息查询<br>#出来<br>SELECT * FROM StudentInfo<br>           WHERE EXISTS(<br>SELECT * FROM StudentInfo<br>         WHERE address LIKE ‘%许昌%’<br>)<br>*/</p>
+<p>第三次课<br>    order by 排序<br>    group by 把表分组<br>    group by…having..分组并筛选符合条件组<br>    子查询<br>    查询语句里边嵌套查询语句<br>连接<br>    把多张表连接成一张表，要注意一般<br>    连接分类：<br>    普通连接<br>    内连接<br>        inner join .. on …<br>        inner join用内连接方式连接两张表<br>              on后面写的是条件<br>        外连接 （左连接与右连接）<br>            左连接<br>            left join..on…<br>            左边的表显示所有数据<br>            右边的表只显示匹配上的数据<br>            右连接<br>            right join…on…<br>            右边的表显示全部数据<br>            左边的表只显示匹配上的数据<br>        全连接<br>            左右边都全部显示<br>第四次课</p>
+<p> truncate清空表<br> truncate table 表名<br> is  null<br> is not null<br> 模糊查询<br>    like<br>    % 代表一个或多个字符<br>    _ 代表一个字符<br> exists存在<br>    exists里边括住的是一个<br>    查询语句,如果查询语句<br>    有结果，外部查询就正常<br>    执行，如果没结果，外部<br>    查询不执行<br> not exists不存在<br>Mysql第四次课<br> truncate清空表<br> truncate table 表名<br> is  null<br> is not null<br> 模糊查询<br>    like<br>    % 代表一个或多个字符<br>    _ 代表一个字符<br> exists存在<br>    exists里边括住的是一个<br>    查询语句,如果查询语句<br>    有结果，外部查询就正常<br>    执行，如果没结果，外部<br>    查询不执行<br> not exists不存在<br>*/<br>SELECT * FROM course<br>              WHERE cnam IS NOT NULL<br>#模糊查询<br>#查询出姓名中包含“三”的<br>#学生的信息<br>SELECT * FROM StudentInfo<br>      WHERE snam LIKE ‘%三%’;<br>#查询出姓周的同学信息<br>SELECT * FROM StudentInfo<br>      WHERE snam LIKE ‘周%’<br>#如果有安阳市的学生，就把<br>#本班所有学生的信息查询<br>#出来<br>SELECT * FROM StudentInfo<br>           WHERE EXISTS(<br>SELECT * FROM StudentInfo<br>         WHERE address LIKE ‘%许昌%’<br>)</p>
+<p>Mysql第五次课<br>   索引与事务<br>   数据库优化<br>      数据库优化指的就是通过各种途径<br>      提高查询效率<br>   优化方式有多种，但其中之一就是为字段<br>   添加索引<br>   什么是索引？<br>     相当于为某个字段或某几个字段，添加<br>     了目录，大大提高了查询效率<br>   索引的分类<br>   普通索引<br>   唯一索引<br>      为字段添加唯一约束，就同时添加<br>      了唯一索引<br>   主键索引<br>      为字段添加主键约束，就同时添加<br>      了主键索引<br>   组合索引<br>   全文索引<br>   空间索引<br>   #创建索引的方式<br>   1、创建表的同时，添加索引<br>   2、alter table<br>   3、create index<br>二、事务<br>   几条语句组成一个整体，要么全部执行成功<br>   要么全部执行失败<br>   关闭事务自动提交<br>   第一开启事务 begin<br>   第二执行语句判断成功不成功<br>       不成功就要全部回滚  rollback<br>   第三成功就进行提交事务  commit<br>   其实每条语句都是一条自动提交的事务<br>事务的特点<br>  原子性<br>      事务的语句是不可分割的，要么全部成功<br>      要么全部失败<br>  一致性<br>      事务完成前后，数据必须保持完全<br>        一致的状态<br>  隔离性<br>      事务与事务之间互不影响，相互独立<br>  持久性<br>      事务一旦完成，对系统的影响，<br>      是永久性的<br>事务的隔离级别<br>未提交读(read uncommitted)<br>已提交读(read committed)<br>重复读(repeatable read)<br>可串行化(serializable)<br>*/<br>#1创建表的同时，添加索引<br>CREATE TABLE emp1(<br>    eid INT PRIMARY KEY AUTO_INCREMENT,<br>    enam VARCHAR(20) NOT NULL,<br>    etel VARCHAR(20) UNIQUE,<br>    INDEX(enam) #为enam字段添加普通索引<br>)<br>SHOW INDEX FROM emp1;<br>#create index<br>#创建普通索引<br>CREATE INDEX index_name ON<br>        table_name(colname[LENGTH])<br>#创建唯一索引<br>CREATE UNIQUE INDEX index_name ON<br>        table_name(colname[LENGTH])</p>
 
       
 
@@ -269,6 +271,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/10/22/Mysql笔记-1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Mysql笔记
+        
+      </div>
+    </a>
   
   
     <a href="/2019/10/18/Mr-樊/" id="article-nav-older" class="article-nav-link-wrap">
